@@ -80,10 +80,10 @@ function Workers() {
 						/>
 					</span>
 				</div>
+				<footer>
+					<p>Start working now</p>
+				</footer>
 			</div>
-			<footer>
-				<p>Start working now</p>
-			</footer>
 		</div>
 	);
 }

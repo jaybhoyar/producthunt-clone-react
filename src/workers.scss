@@ -3,15 +3,28 @@
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 	padding: 20px;
 	background-color: #fff;
-	width: 300px;
+	width: 330px;
 	.makers_list {
 		span {
 			width: 38px;
-			height: 38px;
 			margin: 5px;
 			img {
 				border-radius: 50%;
 			}
+		}
+		padding-bottom: 20px;
+	}
+	footer {
+		p {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-top: 1px solid #e8e8e8;
+			padding-top: 15px;
+			color: #cc4d29;
+			text-transform: uppercase;
+			font-size: 11px;
+			font-weight: 600;
 		}
 	}
 }

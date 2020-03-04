@@ -138,7 +138,7 @@ body {
 	background-color: rgb(243, 243, 243);
 }
 .container {
-	width: 60%;
+	width: 76%;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
@@ -146,8 +146,8 @@ body {
 .product_list {
 	border-radius: 6px;
 	border: 1px solid#fff;
-	width: 68%;
+	width: 60%;
 }
 .side_container {
-	width: 30%;
+	width: 38%;
 }
