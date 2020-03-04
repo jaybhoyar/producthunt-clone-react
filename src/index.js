@@ -2,6 +2,8 @@ import React from "react";
 import ReactDom from "react-dom";
 import Header from "./Header";
 import Card from "./Card";
+import Workers from "./Workers";
+
 const products = [
 	{
 		name: "SelfOne",
@@ -66,7 +68,7 @@ const products = [
 ];
 function Cards(props) {
 	return (
-		<>
+		<div>
 			<Header />
 			<div className="container">
 				<div className="product_list">
@@ -74,9 +76,11 @@ function Cards(props) {
 						<Card {...product} />
 					))}
 				</div>
-				<div > 
+				<div className="side_container">
+					<Workers />
+				</div>
 			</div>
-		</>
+		</div>
 	);
 }
 ReactDom.render(<Cards data={products} />, document.querySelector("#root"));

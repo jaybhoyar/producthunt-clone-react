@@ -137,9 +137,17 @@ body {
 	font-family: "Segoe UI", sans-serif;
 	background-color: rgb(243, 243, 243);
 }
+.container {
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
 .product_list {
 	border-radius: 6px;
 	border: 1px solid#fff;
-	width: 50%;
-	margin: 0 auto;
+	width: 68%;
+}
+.side_container {
+	width: 30%;
 }
