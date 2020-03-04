@@ -6,7 +6,6 @@ div {
 		background: #fff;
 		border-bottom: 1px solid #e8e8e8;
 		height: 66px;
-		margin-bottom: 30px;
 		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
 		display: flex;
 		justify-content: center;
@@ -78,10 +77,9 @@ div {
 	}
 	.title {
 		width: 50%;
-		margin: 0 auto;
+		margin: 30px auto;
 		font-size: 20px;
 		color: #000;
-		padding: 20px 0;
 		font-weight: 600;
 	}
 }

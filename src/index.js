@@ -4,11 +4,33 @@ import Header from "./Header";
 import Card from "./Card";
 const products = [
 	{
-		name: "Datawaves",
-		description: "Add analytics to anything",
-		tags: ["ANALYTICS", "DEVELOPER TOOLS"],
+		name: "SelfOne",
+		description: "Free template for PowerPoint, Keynote and Google Slides",
+		tags: ["DESIGN TOOLS", "PRODUCTIVITY"],
 		img:
-			"https://ph-files.imgix.net/d58fc63b-7ddf-4e5b-9a29-fb2f1162a05e?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
+			"https://ph-files.imgix.net/3b8fff05-5ac3-4e2b-b902-4606c677d40a?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
+	},
+	{
+		name: "Explo",
+		description: "Explore and analyze data without SQL or Excel",
+		tags: ["ANALYTICS", "WEB APP"],
+		img:
+			"https://ph-files.imgix.net/b2d336ea-0c78-430c-8891-cad23d6e316a?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
+	},
+	{
+		name: "Startup 911",
+		description:
+			"Free list of discounts for startups. All you need for growth",
+		tags: ["DESIGN TOOLS", "PRODUCTIVITY"],
+		img:
+			"https://ph-files.imgix.net/8753162a-ebc7-4237-8d4c-e12e142f2c63?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
+	},
+	{
+		name: "ChartMogul Subscription Data Platform",
+		description: "Work with your subscription data like never before.",
+		tags: ["ANALYTICS", "SAAS"],
+		img:
+			"https://ph-files.imgix.net/383c5ede-49db-4a3f-8978-7ba8150907ba?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
 	},
 	{
 		name: "Mailbrew",
@@ -25,13 +47,7 @@ const products = [
 		img:
 			"https://ph-files.imgix.net/331c9402-1670-49ea-9acf-dbffbfc6382d?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
 	},
-	{
-		name: "SelfOne",
-		description: "Free template for PowerPoint, Keynote and Google Slides",
-		tags: ["DESIGN TOOLS", "PRODUCTIVITY"],
-		img:
-			"https://ph-files.imgix.net/3b8fff05-5ac3-4e2b-b902-4606c677d40a?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
-	},
+
 	{
 		name: "SaaS Landing Page",
 		description:
@@ -50,12 +66,17 @@ const products = [
 ];
 function Cards(props) {
 	return (
-		<div>
+		<>
 			<Header />
-			{props.data.map(product => (
-				<Card {...product} />
-			))}
-		</div>
+			<div className="container">
+				<div className="product_list">
+					{props.data.map(product => (
+						<Card {...product} />
+					))}
+				</div>
+				<div > 
+			</div>
+		</>
 	);
 }
 ReactDom.render(<Cards data={products} />, document.querySelector("#root"));
