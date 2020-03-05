@@ -45,7 +45,13 @@ function Header() {
 					</div>
 				</header>
 			</div>
-			<p className="title"> Today </p>
+			<div className="heading">
+				<div className="main_heading">
+					<p className="title"> Today </p>
+					<span className="sub_title">Popular | Newest</span>
+				</div>
+				<h3>Makers working today</h3>
+			</div>
 		</div>
 	);
 }

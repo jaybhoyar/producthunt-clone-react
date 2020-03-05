@@ -75,11 +75,34 @@ div {
 			}
 		}
 	}
-	.title {
+	.heading {
 		width: 76%;
-		margin: 30px auto;
-		font-size: 20px;
-		color: #000;
-		font-weight: 600;
+		margin: 40px auto 8px auto;
+		display: flex;
+		justify-content: space-between;
+		.main_heading {
+			width: 60%;
+			display: flex;
+			justify-content: space-between;
+			.title {
+				font-size: 20px;
+				color: #000;
+				font-weight: 600;
+				line-height: 2rem;
+			}
+			.sub_title {
+				color: #000;
+				font-size: 11px;
+				font-weight: 400;
+				text-transform: uppercase;
+				line-height: 1.5rem;
+			}
+		}
+		h3 {
+			width: 38%;
+			font-weight: 600;
+			font-size: 1rem;
+			line-height: 2rem;
+		}
 	}
 }

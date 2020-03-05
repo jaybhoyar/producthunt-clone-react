@@ -4,15 +4,18 @@
 	padding: 20px;
 	background-color: #fff;
 	width: 330px;
+	margin-bottom: 20px;
 	.makers_list {
+		padding-bottom: 20px;
 		span {
-			width: 38px;
+			display: inline-block;
 			margin: 5px;
 			img {
+				width: 38px;
+				height: 38px;
 				border-radius: 50%;
 			}
 		}
-		padding-bottom: 20px;
 	}
 	footer {
 		p {

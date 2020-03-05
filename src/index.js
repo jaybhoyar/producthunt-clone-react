@@ -3,6 +3,7 @@ import ReactDom from "react-dom";
 import Header from "./Header";
 import Card from "./Card";
 import Workers from "./Workers";
+import Newsletter from "./newsletter";
 
 const products = [
 	{
@@ -66,6 +67,56 @@ const products = [
 			"https://ph-files.imgix.net/2a750d4a-ab47-4b84-a124-3acd044b8ed6?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
 	}
 ];
+const images = [
+	{
+		img:
+			"https://ph-avatars.imgix.net/304202/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop"
+	},
+	{
+		img:
+			"https://ph-avatars.imgix.net/1456069/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop&dpr=2"
+	},
+	{
+		img:
+			"https://ph-avatars.imgix.net/17305/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop&dpr=2"
+	},
+	{
+		img:
+			"https://ph-avatars.imgix.net/1263444/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop&dpr=2"
+	},
+	{
+		img:
+			"https://ph-avatars.imgix.net/826276/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop"
+	},
+	{
+		img:
+			"https://ph-avatars.imgix.net/2395344/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=38&h=38&fit=crop"
+	},
+	{
+		img:
+			"https://ph-avatars.imgix.net/94353/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop"
+	},
+	{
+		img:
+			"https://ph-avatars.imgix.net/166755/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop"
+	},
+	{
+		img:
+			"https://ph-avatars.imgix.net/2395344/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop"
+	},
+	{
+		img:
+			"https://ph-avatars.imgix.net/2097425/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=38&h=38&fit=crop"
+	},
+	{
+		img:
+			"https://ph-avatars.imgix.net/2096165/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop"
+	},
+	{
+		img:
+			"https://ph-avatars.imgix.net/304202/original?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=30&h=30&fit=crop"
+	}
+];
 function Cards(props) {
 	return (
 		<div>
@@ -77,7 +128,8 @@ function Cards(props) {
 					))}
 				</div>
 				<div className="side_container">
-					<Workers />
+					<Workers data={images} />
+					<Newsletter />
 				</div>
 			</div>
 		</div>
