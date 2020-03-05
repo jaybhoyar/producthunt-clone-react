@@ -138,16 +138,19 @@ body {
 	background-color: rgb(243, 243, 243);
 }
 .container {
-	width: 76%;
+	width: 80%;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
 }
 .product_list {
-	border-radius: 6px;
-	border: 1px solid#fff;
-	width: 58%;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	width: 66%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 .side_container {
-	width: 40%;
+	width: 32%;
 }

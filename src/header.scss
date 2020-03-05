@@ -10,11 +10,12 @@ div {
 		display: flex;
 		justify-content: center;
 		.header {
-			width: 64%;
+			width: 78%;
 			display: flex;
 			justify-content: space-between;
+			margin: 0 auto;
 			.nav {
-				width: 60%;
+				width: 66%;
 				display: flex;
 				justify-content: space-evenly;
 				.logo {
@@ -33,7 +34,7 @@ div {
 					}
 					input {
 						background-color: #fff;
-						width: 300px;
+						width: 280px;
 						border: 1px solid #e8e8e8;
 						border-radius: 3px;
 						height: 35px;
@@ -54,6 +55,9 @@ div {
 				}
 			}
 			.auth_button {
+				width: 32%;
+				text-align: right;
+				margin-right: 20px;
 				margin-top: 8px;
 				button {
 					height: 30px;
@@ -76,12 +80,12 @@ div {
 		}
 	}
 	.heading {
-		width: 76%;
+		width: 80%;
 		margin: 40px auto 8px auto;
 		display: flex;
 		justify-content: space-between;
 		.main_heading {
-			width: 60%;
+			width: 66%;
 			display: flex;
 			justify-content: space-between;
 			.title {
@@ -99,7 +103,7 @@ div {
 			}
 		}
 		h3 {
-			width: 38%;
+			width: 32%;
 			font-weight: 600;
 			font-size: 1rem;
 			line-height: 2rem;

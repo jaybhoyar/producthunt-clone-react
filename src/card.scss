@@ -1,8 +1,8 @@
 .product_container {
 	display: flex;
 	background-color: #fff;
-  width: 100%;
-  justify-content: space-between;
+	width: 99.99%;
+	justify-content: space-between;
 	align-items: center;
 	padding: 18px 30px 18px 20px;
 	border-bottom: 1px solid #e8e8e8;
@@ -45,10 +45,12 @@
 		}
 	}
 	.votes {
-		height: 74px;
-		width: 64px;
-		margin-left: 12px;
-		border-color: #e8e8e8;
+		border-radius: 3px;
+		width: 74px;
+		border: 1px solid #e8e8e8;
+		padding: 10px;
+		display: flex;
+		align-items: center;
 		span {
 			display: inline-block;
 		}

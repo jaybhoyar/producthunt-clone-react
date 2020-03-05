@@ -18,7 +18,7 @@ function Card(product) {
 			</div>
 			<div className="votes">
 				<span className="angle_up">▲</span>
-				<span className="votes_count">134</span>
+				<span className="votes_count">{product.vote}</span>
 			</div>
 		</div>
 	);
