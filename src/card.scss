@@ -54,11 +54,12 @@
 		span {
 			display: inline-block;
 		}
-		button {
+		.votes_count {
+			cursor: pointer;
 			background-color: none;
 			border: none;
 			outline: none;
-			padding: 0;
+			padding: 0 10px;
 			font-size: 13px;
 			font-weight: 600;
 		}

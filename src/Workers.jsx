@@ -2,7 +2,6 @@ import React from "react";
 import "./workers.scss";
 
 function Workers(images) {
-	console.log(images);
 	return (
 		<div>
 			<div className="makers_container">
