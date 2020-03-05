@@ -1,6 +1,5 @@
-.newletter_title {
+.radio_title {
 	h3 {
-		width: 38%;
 		font-weight: 600;
 		font-size: 1rem;
 		line-height: 2rem;
@@ -13,54 +12,25 @@
 	background-color: #fff;
 	width: 330px;
 	margin-bottom: 20px;
+	display: flex;
+	.sponsered_message {
+		width: 240px;
+		padding: 10px 15px 10px 10px;
+		span {
+			min-height: 30px;
+			line-height: 20px;
+			font-weight: 600;
+			font-size: 13px;
+		}
+	}
 	.background_image {
-		background: url("https://ph-files.imgix.net/742f9303-ea31-4ab8-89fa-664e6be69029?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=290&h=110&fit=clamp");
-		width: 100%;
-		height: 110px;
-		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
-	}
-	.img_heading {
-		border-bottom: 1px solid #e8e8e8;
-		line-height: 32px;
-		text-align: center;
-		padding: 10px;
-		font-size: 20px;
-		font-weight: 300;
-		align-self: center;
-	}
-	.signup_container {
-		padding: 20px;
-		.signup_message {
-			display: inline-block;
-			font-weight: 700;
-			margin-bottom: 10px;
-			font-size: 1rem;
-			line-height: 1.2rem;
-		}
-		form {
-			display: flex;
-			flex-direction: column;
-			.email_field {
-				border-radius: 3px;
-				border: 1px solid #e8e8e8;
-				box-sizing: border-box;
-				padding: 0 10px;
-				font-size: 13px;
-				height: 34px;
-				width: inherit;
-				margin-bottom: 10px;
-			}
-			.submit_button {
-				background-color: #cc4d29;
-				height: 34px;
-				padding: 0 13px;
-				color: #fff;
-				font-weight: 600;
-				line-height: 1rem;
-				border: none;
-				border-radius: 3px;
-			}
-		}
+		border-bottom-right-radius: 5px;
+		width: 90px;
+		background: #f8f800
+			url(https://ph-static.imgix.net/radio/ph_radio_cat.png?auto=format&auto=compress&w=90)
+			no-repeat 100% 100%;
+		background-size: 80% auto;
+		justify-content: center;
 	}
 }
