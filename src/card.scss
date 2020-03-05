@@ -54,6 +54,14 @@
 		span {
 			display: inline-block;
 		}
+		button {
+			background-color: none;
+			border: none;
+			outline: none;
+			padding: 0;
+			font-size: 13px;
+			font-weight: 600;
+		}
 	}
 }
 .product_container:hover {
