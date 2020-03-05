@@ -1,14 +1,14 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from "react";
-import "./newsletter.scss";
+import "./sponser.scss";
 
-function Newsletter() {
+function Sponser() {
 	return (
 		<div>
 			<div className="newletter_title">
-				<h3>Newsletter</h3>
+				<h3>Product Hunt Radio</h3>
 			</div>
-			<div className="newsletter_container">
+			<div className="sponsered_container">
 				<div className="background_image"></div>
 				<p className="img_heading">Remote teams, this is for you</p>
 				<div className="signup_container">
@@ -32,4 +32,4 @@ function Newsletter() {
 		</div>
 	);
 }
-export default Newsletter;
+export default Sponser;

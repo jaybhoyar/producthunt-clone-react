@@ -4,6 +4,7 @@ import Header from "./Header";
 import Card from "./Card";
 import Workers from "./Workers";
 import Newsletter from "./newsletter";
+import Sponser from "./Sponser";
 
 const products = [
 	{
@@ -129,6 +130,7 @@ function Cards(props) {
 				</div>
 				<div className="side_container">
 					<Workers data={images} />
+					<Sponser />
 					<Newsletter />
 				</div>
 			</div>
