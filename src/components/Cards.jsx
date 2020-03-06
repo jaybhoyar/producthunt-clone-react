@@ -1,16 +1,15 @@
 import React from "react";
 import Card from "./Card";
 import Workers from "./Workers";
-import Newsletter from "./newsletter";
-import Sponser from "./Sponser";
-var id = 0;
+import Newsletter from "./Newsletter";
+import Form from "./Form";
+
 const products = [
 	{
 		name: "SelfOne",
 		description: "Free template for PowerPoint, Keynote and Google Slides",
 		tags: ["DESIGN TOOLS", "PRODUCTIVITY"],
 		vote: 419,
-		id: id++,
 		img:
 			"https://ph-files.imgix.net/3b8fff05-5ac3-4e2b-b902-4606c677d40a?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
 	},
@@ -19,7 +18,6 @@ const products = [
 		description: "Explore and analyze data without SQL or Excel",
 		tags: ["ANALYTICS", "WEB APP"],
 		vote: 276,
-		id: id++,
 		img:
 			"https://ph-files.imgix.net/b2d336ea-0c78-430c-8891-cad23d6e316a?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
 	},
@@ -29,7 +27,6 @@ const products = [
 			"Free list of discounts for startups. All you need for growth",
 		tags: ["DESIGN TOOLS", "PRODUCTIVITY"],
 		vote: 312,
-		id: id++,
 		img:
 			"https://ph-files.imgix.net/8753162a-ebc7-4237-8d4c-e12e142f2c63?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
 	},
@@ -38,7 +35,6 @@ const products = [
 		description: "Work with your subscription data like never before.",
 		tags: ["ANALYTICS", "SAAS"],
 		vote: 226,
-		id: id++,
 		img:
 			"https://ph-files.imgix.net/383c5ede-49db-4a3f-8978-7ba8150907ba?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
 	},
@@ -48,7 +44,6 @@ const products = [
 			"Automated email digests from Twitter, Reddit, YouTube & more",
 		tags: ["EMAIL", "PRODUCTIVITY"],
 		vote: 472,
-		id: id++,
 		img:
 			"https://ph-files.imgix.net/f64667ec-0201-4f20-9a03-161ab227a936?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
 	},
@@ -57,7 +52,6 @@ const products = [
 		description: "Export music to Spotify from any musical services",
 		tags: ["IPHONE", "MUSIC"],
 		vote: 354,
-		id: id++,
 		img:
 			"https://ph-files.imgix.net/331c9402-1670-49ea-9acf-dbffbfc6382d?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
 	},
@@ -68,7 +62,6 @@ const products = [
 			"The best SaaS landing page examples for design inspiration",
 		tags: ["DESIGN TOOLS", "DEVELOPER TOOLS"],
 		vote: 627,
-		id: id++,
 		img:
 			"https://ph-files.imgix.net/ec8385c2-d317-4cf6-ac1a-e20c8d8f6b89?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
 	},
@@ -77,7 +70,6 @@ const products = [
 		description: "The live Sunday dating app",
 		tags: ["IPHONE", "DATING"],
 		vote: 869,
-		id: id++,
 		img:
 			"https://ph-files.imgix.net/2a750d4a-ab47-4b84-a124-3acd044b8ed6?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=80&h=80&fit=crop&dpr=2"
 	}
@@ -159,7 +151,7 @@ class Cards extends React.Component {
 					</div>
 					<div className="side_container">
 						<Workers data={images} />
-						<Sponser />
+						<Form />
 						<Newsletter />
 					</div>
 				</div>

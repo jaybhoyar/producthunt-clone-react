@@ -1,0 +1,60 @@
+.form_title {
+	h3 {
+		font-weight: 600;
+		font-size: 1rem;
+		line-height: 2rem;
+		margin-bottom: 10px;
+	}
+}
+
+.product_box {
+	border-radius: 5px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	width: 330px;
+	margin-bottom: 20px;
+	.addproduct_container {
+		padding: 20px;
+		.signup_message {
+			display: inline-block;
+			font-weight: 700;
+			margin-bottom: 10px;
+			font-size: 1rem;
+			line-height: 1.2rem;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			label {
+				font-size: 13px;
+				font-weight: 400;
+				margin: 5px 0;
+				color: #474545;
+			}
+			.name_field {
+				border-radius: 3px;
+				border: 1px solid #e8e8e8;
+				box-sizing: border-box;
+				padding: 0 10px;
+				font-size: 13px;
+				height: 34px;
+				width: inherit;
+				margin-bottom: 10px;
+				outline: none;
+			}
+			.name_field:focus {
+				border: 1px solid #1870e4;
+			}
+			.submit_button {
+				background-color: #cc4d29;
+				height: 34px;
+				padding: 0 13px;
+				color: #fff;
+				font-weight: 600;
+				line-height: 1rem;
+				border: none;
+				border-radius: 3px;
+			}
+		}
+	}
+}

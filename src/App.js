@@ -1,10 +1,10 @@
 import React from "react";
-import Cards from "./Cards";
-import Header from "./Header";
+import Cards from "./components/Cards";
+import Header from "./components/Header";
 
 const App = () => {
 	return (
-		<div className="max-w-6xl mx-auto">
+		<div>
 			<Header />
 			<Cards />
 		</div>

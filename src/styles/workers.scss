@@ -1,3 +1,36 @@
+.makers_container {
+	border-radius: 5px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	background-color: #fff;
+	width: 330px;
+	margin-bottom: 20px;
+	.makers_list {
+		padding-bottom: 20px;
+		span {
+			display: inline-block;
+			margin: 5px;
+			img {
+				width: 38px;
+				height: 38px;
+				border-radius: 50%;
+			}
+		}
+	}
+	footer {
+		p {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-top: 1px solid #e8e8e8;
+			padding-top: 15px;
+			color: #cc4d29;
+			text-transform: uppercase;
+			font-size: 11px;
+			font-weight: 600;
+		}
+	}
+}
 .radio_title {
 	h3 {
 		font-weight: 600;

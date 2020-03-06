@@ -1,10 +1,21 @@
-/* eslint-disable jsx-a11y/accessible-emoji */
 import React from "react";
-import "./sponser.scss";
+import "../styles/workers.scss";
 
-function Sponser() {
+function Workers(images) {
 	return (
 		<div>
+			<div className="makers_container">
+				<div className="makers_list">
+					{images.data.map(cv => (
+						<span>
+							<img src={cv.img} alt="worker" />
+						</span>
+					))}
+				</div>
+				<footer>
+					<p>Start working now</p>
+				</footer>
+			</div>
 			<div className="radio_title">
 				<h3>Product Hunt Radio</h3>
 			</div>
@@ -19,4 +30,4 @@ function Sponser() {
 		</div>
 	);
 }
-export default Sponser;
+export default Workers;
