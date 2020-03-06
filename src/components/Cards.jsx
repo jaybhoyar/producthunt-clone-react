@@ -1,8 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import Workers from "./Workers";
-import Newsletter from "./Newsletter";
-import Form from "./Form";
+import Sidebar from "./Sidebar";
 
 const products = [
 	{
@@ -150,9 +148,7 @@ class Cards extends React.Component {
 						))}
 					</div>
 					<div className="side_container">
-						<Workers data={images} />
-						<Form />
-						<Newsletter />
+						<Sidebar data={images} />
 					</div>
 				</div>
 			</div>
