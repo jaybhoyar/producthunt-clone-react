@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import Sidebar from "./Sidebar";
-import config from "../../config.js";
+import config from "../config.js";
 
 const products = [
 	{
@@ -127,8 +127,23 @@ class Cards extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			data: products
+			data: []
 		};
+		fetch("https://api.producthunt.com/v1/posts/", {
+			method: "GET",
+			headers: {
+				Accept: "application/json",
+				"Content-Type": "application/json",
+				Authorization: "Bearer " + config.token,
+				Host: "api.producthunt.com"
+			}
+		})
+			.then(res => res.json())
+			.then(resData => {
+				console.log(resData.posts);
+				this.setState({ data: resData.posts });
+			})
+			.catch(err => console.log(err));
 	}
 	updateCount = vote => {
 		let updatedData = this.state.data.map(product => {
@@ -139,17 +154,23 @@ class Cards extends React.Component {
 		});
 		this.setState({ data: updatedData });
 	};
-	componentDidMount() {
-		fetch("https://api.producthunt/v1/posts", {
-			method: "GET",
-			headers: {
-				Accept: "application/json",
-				"Content-Type": "application/json",
-				Authorization: "Bearer " + config.token,
-				Host: "api.producthunt.com"
-			}
-		});
-	}
+	// componentDidMount() {
+	// 	fetch("https://api.producthunt.com/v1/posts/", {
+	// 		method: "GET",
+	// 		headers: {
+	// 			Accept: "application/json",
+	// 			"Content-Type": "application/json",
+	// 			Authorization: "Bearer " + config.token,
+	// 			Host: "api.producthunt.com"
+	// 		}
+	// 	})
+	// 		.then(res => res.json())
+	// 		.then(resData => {
+	// 			console.log(resData.posts);
+	// 			this.setState({ data: resData.posts });
+	// 		})
+	// 		.catch(err => console.log(err));
+	// }
 	render() {
 		return (
 			<>

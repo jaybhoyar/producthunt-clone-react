@@ -4,15 +4,17 @@
 	width: 99.99%;
 	justify-content: space-between;
 	align-items: center;
-	padding: 18px 30px 18px 20px;
+	padding: 20px 30px 20px 20px;
 	border-bottom: 1px solid #e8e8e8;
 	cursor: pointer;
 	.image_container {
-		height: 80px;
-		width: 80px;
+		height: 83px;
+		width: 83px;
 		margin-right: 20px;
+		padding: 3px;
 		img {
-			width: 100%;
+			height: 80px;
+			width: 80px;
 		}
 	}
 	div {
@@ -66,5 +68,5 @@
 	}
 }
 .product_container:hover {
-  background-color: #f9f9f9;
+	background-color: #f9f9f9;
 }
