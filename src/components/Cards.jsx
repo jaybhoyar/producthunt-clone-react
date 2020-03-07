@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import Sidebar from "./Sidebar";
+import config from "../../config.js";
 
 const products = [
 	{
@@ -138,9 +139,20 @@ class Cards extends React.Component {
 		});
 		this.setState({ data: updatedData });
 	};
+	componentDidMount() {
+		fetch("https://api.producthunt/v1/posts", {
+			method: "GET",
+			headers: {
+				Accept: "application/json",
+				"Content-Type": "application/json",
+				Authorization: "Bearer " + config.token,
+				Host: "api.producthunt.com"
+			}
+		});
+	}
 	render() {
 		return (
-			<div>
+			<>
 				<div className="container">
 					<div className="product_list">
 						{this.state.data.map(product => (
@@ -151,7 +163,7 @@ class Cards extends React.Component {
 						<Sidebar data={images} />
 					</div>
 				</div>
-			</div>
+			</>
 		);
 	}
 }

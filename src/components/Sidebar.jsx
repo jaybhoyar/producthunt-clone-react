@@ -5,14 +5,11 @@ import Form from "./Form";
 
 function Sidebar(props) {
 	return (
-		console.log(props.data),
-		(
-			<>
-				<Workers data={props.data} />
-				<Form />
-				<Newsletter />
-			</>
-		)
+		<>
+			<Workers data={props.data} />
+			<Form />
+			<Newsletter />
+		</>
 	);
 }
 
