@@ -20,6 +20,9 @@ div {
 				justify-content: space-evenly;
 				.logo {
 					margin-right: 20px;
+					&:hover {
+						cursor: pointer;
+					}
 					img {
 						height: 40px;
 						width: 40px;
@@ -51,6 +54,9 @@ div {
 						margin-right: 20px;
 						color: #6f6f6f;
 						font-size: 1rem;
+						&:hover {
+							cursor: pointer;
+						}
 					}
 				}
 			}
@@ -70,6 +76,9 @@ div {
 					text-transform: uppercase;
 					font-weight: 600;
 					border-radius: 3px;
+					&:hover {
+						cursor: pointer;
+					}
 				}
 				.signup_button {
 					background-color: #cc4d29;

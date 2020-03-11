@@ -130,10 +130,10 @@ class Cards extends React.Component {
 			data: []
 		};
 	}
-	updateCount = vote => {
+	updateCount = id => {
 		let updatedData = this.state.data.map(product => {
-			if (product.vote === vote) {
-				product.vote = product.vote + 1;
+			if (product.id === id) {
+				product.votes_count += 1;
 			}
 			return product;
 		});

@@ -20,7 +20,7 @@ function Card(product) {
 				<span className="angle_up">▲</span>
 				<button
 					className="votes_count"
-					onClick={() => product.updateCount(product.vote)}
+					onClick={() => product.updateCount(product.id)}
 				>
 					{product.votes_count}
 				</button>

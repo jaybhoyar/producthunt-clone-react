@@ -53,20 +53,26 @@
 		padding: 10px;
 		display: flex;
 		align-items: center;
+		background-color: #fff;
+
 		span {
 			display: inline-block;
 		}
 		.votes_count {
 			cursor: pointer;
-			background-color: none;
 			border: none;
 			outline: none;
 			padding: 0 10px;
 			font-size: 13px;
 			font-weight: 600;
+			background: none;
 		}
 	}
 }
-.product_container:hover {
-	background-color: #f9f9f9;
+// .product_container:hover {
+// 	background-color: #f9f9f9;
+// }
+
+.product_container > .votes:hover {
+	background-color: #e8e8e8;
 }
